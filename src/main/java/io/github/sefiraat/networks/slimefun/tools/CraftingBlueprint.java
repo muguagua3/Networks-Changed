@@ -31,7 +31,7 @@ public class CraftingBlueprint extends UnplaceableBlock {
         DataTypeMethods.setCustom(itemMeta, Keys.BLUEPRINT_INSTANCE, PersistentCraftingBlueprintType.TYPE, new BlueprintInstance(recipe, output));
         List<String> lore = new ArrayList<>();
 
-        lore.add(Theme.CLICK_INFO + "已指定配方");
+        lore.add(Theme.CLICK_INFO + "已指定配方.");
 
         for (ItemStack item : recipe) {
             if (item == null) {
